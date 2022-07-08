@@ -123,13 +123,13 @@ class PlayerController: UIViewController {
             let time : Float = Float(seconds)
             self.playerSlider.value = time
             
-            timeLabel.text =  Utilities.shared.formatTimeFromSeconds(totalSeconds: Int32(Float(Float64(CMTimeGetSeconds((player.currentItem?.asset.duration)!)))))
-            currentTimeLabel.text = Utilities.shared.formatTimeFromSeconds(totalSeconds: Int32(Float(Float64(CMTimeGetSeconds((player.currentItem?.currentTime())!)))))
-        }else{
+            timeLabel.text = Int32(Float(Float64(CMTimeGetSeconds((player.currentItem?.asset.duration)!)))).formattedTimeFromSeconds
+            currentTimeLabel.text = Int32(Float(Float64(CMTimeGetSeconds((player.currentItem?.currentTime())!)))).formattedTimeFromSeconds
+        } else {
             playerSlider.value = 0
             playerSlider.minimumValue = 0
             playerSlider.maximumValue = 0
-            timeLabel.text = Utilities.shared.formatTimeFromSeconds(totalSeconds: Int32(CMTimeGetSeconds((player.currentItem?.currentTime())!)))
+            timeLabel.text = Int32(CMTimeGetSeconds((player.currentItem?.currentTime())!)).formattedTimeFromSeconds
         }
     }
     

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,13 @@
 		7D639EAD23E6CD3C00F5ECF8 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D639EAC23E6CD3C00F5ECF8 /* Album.swift */; };
 		7D639EB123E6F54400F5ECF8 /* MusicDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D639EB023E6F54400F5ECF8 /* MusicDataProvider.swift */; };
 		7D639EB323E6F7A000F5ECF8 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D639EB223E6F7A000F5ECF8 /* Artist.swift */; };
-		7DE3E41823EC057500EB8360 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE3E41723EC057500EB8360 /* Utilities.swift */; };
+		7D943D2C28784F3D00B91A56 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D943D2B28784F3D00B91A56 /* LoginViewController.swift */; };
+		7D943D2F28785A3400B91A56 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7D943D2E28785A3400B91A56 /* FirebaseAuth */; };
+		7D943D3128785A7400B91A56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D943D3028785A7400B91A56 /* GoogleService-Info.plist */; };
+		7D943D3428785BCD00B91A56 /* Int32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D943D3328785BCD00B91A56 /* Int32+Extension.swift */; };
+		7D943D3628785BFA00B91A56 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D943D3528785BFA00B91A56 /* String+Extension.swift */; };
+		7D943D38287862EE00B91A56 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D943D37287862EE00B91A56 /* UIView+Extension.swift */; };
+		7D943D3C2878677C00B91A56 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D943D3B2878677C00B91A56 /* HomeViewController.swift */; };
 		7DFE2FAD286B80E700560A9E /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFE2FAC286B80E700560A9E /* SearchResponse.swift */; };
 		7DFE2FAF286B816C00560A9E /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFE2FAE286B816C00560A9E /* Song.swift */; };
 		7DFE2FB2286B822400560A9E /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFE2FB1286B822400560A9E /* SongCell.swift */; };
@@ -44,7 +50,12 @@
 		7D639EAC23E6CD3C00F5ECF8 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		7D639EB023E6F54400F5ECF8 /* MusicDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataProvider.swift; sourceTree = "<group>"; };
 		7D639EB223E6F7A000F5ECF8 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
-		7DE3E41723EC057500EB8360 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7D943D2B28784F3D00B91A56 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7D943D3028785A7400B91A56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7D943D3328785BCD00B91A56 /* Int32+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int32+Extension.swift"; sourceTree = "<group>"; };
+		7D943D3528785BFA00B91A56 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		7D943D37287862EE00B91A56 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		7D943D3B2878677C00B91A56 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7DFE2FAC286B80E700560A9E /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		7DFE2FAE286B816C00560A9E /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		7DFE2FB1286B822400560A9E /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
@@ -55,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D943D2F28785A3400B91A56 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +76,8 @@
 		7D0A400A23E715EA00EDCBBC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7D943D2B28784F3D00B91A56 /* LoginViewController.swift */,
+				7D943D3B2878677C00B91A56 /* HomeViewController.swift */,
 				7D639E9823E4AD0300F5ECF8 /* SearchController.swift */,
 				7D0A400B23E71C1500EDCBBC /* PlayerController.swift */,
 				7D47565723E76ADE0080EAB2 /* FavoritesController.swift */,
@@ -77,7 +91,6 @@
 				7D639EB023E6F54400F5ECF8 /* MusicDataProvider.swift */,
 				7D47568023E778100080EAB2 /* CoreDB.swift */,
 				7D0E5C9E23E8CC3C007FF24C /* Protocols.swift */,
-				7DE3E41723EC057500EB8360 /* Utilities.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -119,11 +132,23 @@
 				7D0A400A23E715EA00EDCBBC /* View Controllers */,
 				7D47565923E776580080EAB2 /* Models */,
 				7D3A147A23EAB60F0077C34A /* Helpers */,
+				7D943D3228785BAF00B91A56 /* Extensions */,
 				7D639E9D23E4AD0400F5ECF8 /* Assets.xcassets */,
 				7D639EA223E4AD0400F5ECF8 /* Info.plist */,
+				7D943D3028785A7400B91A56 /* GoogleService-Info.plist */,
 				7D47567D23E7779A0080EAB2 /* CoreMusic.xcdatamodeld */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		7D943D3228785BAF00B91A56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7D943D3328785BCD00B91A56 /* Int32+Extension.swift */,
+				7D943D3528785BFA00B91A56 /* String+Extension.swift */,
+				7D943D37287862EE00B91A56 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7DFE2FB0286B81BB00560A9E /* Views */ = {
@@ -151,6 +176,9 @@
 			dependencies = (
 			);
 			name = Music;
+			packageProductDependencies = (
+				7D943D2E28785A3400B91A56 /* FirebaseAuth */,
+			);
 			productName = Music;
 			productReference = 7D639E9123E4AD0300F5ECF8 /* Music.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +206,9 @@
 				Base,
 			);
 			mainGroup = 7D639E8823E4AD0300F5ECF8;
+			packageReferences = (
+				7D943D2D28785A3400B91A56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7D639E9223E4AD0300F5ECF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,6 +225,7 @@
 			files = (
 				7D639E9E23E4AD0400F5ECF8 /* Assets.xcassets in Resources */,
 				7D639E9C23E4AD0300F5ECF8 /* Main.storyboard in Resources */,
+				7D943D3128785A7400B91A56 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,16 +239,20 @@
 				7DFE2FB2286B822400560A9E /* SongCell.swift in Sources */,
 				7DFE2FAD286B80E700560A9E /* SearchResponse.swift in Sources */,
 				7D0E5C9A23E77CF8007FF24C /* CoreMusic.xcdatamodeld in Sources */,
+				7D943D3428785BCD00B91A56 /* Int32+Extension.swift in Sources */,
 				7D639EAD23E6CD3C00F5ECF8 /* Album.swift in Sources */,
 				7D47565823E76ADE0080EAB2 /* FavoritesController.swift in Sources */,
 				7D0E5C9F23E8CC3C007FF24C /* Protocols.swift in Sources */,
-				7DE3E41823EC057500EB8360 /* Utilities.swift in Sources */,
 				7D47568123E778100080EAB2 /* CoreDB.swift in Sources */,
 				7D0A400C23E71C1500EDCBBC /* PlayerController.swift in Sources */,
 				7D639E9923E4AD0300F5ECF8 /* SearchController.swift in Sources */,
+				7D943D3628785BFA00B91A56 /* String+Extension.swift in Sources */,
 				7DFE2FAF286B816C00560A9E /* Song.swift in Sources */,
+				7D943D38287862EE00B91A56 /* UIView+Extension.swift in Sources */,
 				7D639EB123E6F54400F5ECF8 /* MusicDataProvider.swift in Sources */,
 				7D639E9523E4AD0300F5ECF8 /* AppDelegate.swift in Sources */,
+				7D943D3C2878677C00B91A56 /* HomeViewController.swift in Sources */,
+				7D943D2C28784F3D00B91A56 /* LoginViewController.swift in Sources */,
 				7D0E5C9D23E8197D007FF24C /* SavedSongCell.swift in Sources */,
 				7D639E9723E4AD0300F5ECF8 /* SceneDelegate.swift in Sources */,
 				7D639EB323E6F7A000F5ECF8 /* Artist.swift in Sources */,
@@ -411,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D943D2D28785A3400B91A56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D943D2E28785A3400B91A56 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D943D2D28785A3400B91A56 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7D47567D23E7779A0080EAB2 /* CoreMusic.xcdatamodeld */ = {
