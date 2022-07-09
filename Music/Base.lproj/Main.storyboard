@@ -219,8 +219,8 @@
                         <tabBarAppearance key="standardAppearance"/>
                     </tabBar>
                     <connections>
-                        <segue destination="QC0-FL-6xP" kind="relationship" relationship="viewControllers" id="y8d-e3-wbb"/>
                         <segue destination="BPg-SG-Gmb" kind="relationship" relationship="viewControllers" id="usY-9e-ykc"/>
+                        <segue destination="QC0-FL-6xP" kind="relationship" relationship="viewControllers" id="y8d-e3-wbb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9r-IX-CVQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,8 +240,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="QPY-ay-VcE"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <color key="barTintColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="MRN-D4-nWb"/>
@@ -261,7 +260,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eq7-3H-yAY">
                                         <rect key="frame" x="115.5" y="168" width="119.5" height="32"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -278,7 +277,6 @@
                                             <constraint firstAttribute="height" constant="20.5" id="Kmn-wF-8Xd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="taT-hC-LmG">
@@ -511,10 +509,10 @@
         <scene sceneID="p49-4A-IAj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QC0-FL-6xP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Saved" image="heart" catalog="system" id="jrj-aC-HXl"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Saved" image="heart" catalog="system" id="jrj-aC-HXl"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fdh-Rb-8oS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Fdh-Rb-8oS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -532,8 +530,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BPg-SG-Gmb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="R5O-kI-X0Q"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JnH-9x-wdk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="JnH-9x-wdk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

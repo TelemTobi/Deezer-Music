@@ -20,6 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func setupRootViewController() {
+        UserDefaults.standard.set(false, forKey: "isLoggedIn") // For development purposes ⚠️
+        
         let isLoggedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         

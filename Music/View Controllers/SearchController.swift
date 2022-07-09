@@ -39,7 +39,6 @@ class SearchController: UIViewController {
         bottomStackView.alpha = 0
         artistImage.layer.cornerRadius = artistImage.frame.height / 2
         artistImage.layer.masksToBounds = true
-        searchBar.searchTextField.textColor = .white
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
